@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "10.3.1 20210528")
+(!version  "10.3.1 20210610")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 218
@@ -27682,15 +27682,15 @@
    (!type already_seen 2025)
   )
   gc_pointed_to "hash_map<tree,tree_pair_p>"
-  (!srcfileloc  "cp/pt.c" 28947)
+  (!srcfileloc  "cp/pt.c" 28908)
   (!fields 2 
    (!pair  "tree_pair_p"
     (!type already_seen 541)
-    (!srcfileloc  "cp/pt.c" 28947)
+    (!srcfileloc  "cp/pt.c" 28908)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "cp/pt.c" 28947)
+    (!srcfileloc  "cp/pt.c" 28908)
     nil )
   )
  )
@@ -28025,7 +28025,7 @@
   nil 0 nil nil )
  
  (!type struct 2072 nil  gc_used "module_hasher"
-  (!srcfileloc  "fortran/trans-decl.c" 5133)
+  (!srcfileloc  "fortran/trans-decl.c" 5134)
   (!fields 0 )
   nil 32 nil nil )
  
@@ -28034,11 +28034,11 @@
    (!type already_seen 2073)
   )
   gc_pointed_to "hash_table<module_hasher>"
-  (!srcfileloc  "fortran/trans-decl.c" 5133)
+  (!srcfileloc  "fortran/trans-decl.c" 5134)
   (!fields 1 
    (!pair  "module_hasher"
     (!type already_seen 2072)
-    (!srcfileloc  "fortran/trans-decl.c" 5133)
+    (!srcfileloc  "fortran/trans-decl.c" 5134)
     nil )
   )
  )
@@ -28814,11 +28814,11 @@
   nil )
  (!pair  "module_hasher"
   (!type already_seen 2072)
-  (!srcfileloc  "fortran/trans-decl.c" 5133)
+  (!srcfileloc  "fortran/trans-decl.c" 5134)
   nil )
  (!pair  "hash_table<module_hasher>"
   (!type already_seen 2073)
-  (!srcfileloc  "fortran/trans-decl.c" 5133)
+  (!srcfileloc  "fortran/trans-decl.c" 5134)
   nil )
  (!pair  "tree_frame_info"
   (!type already_seen 662)
@@ -28918,7 +28918,7 @@
   nil )
  (!pair  "hash_map<tree,tree_pair_p>"
   (!type already_seen 2025)
-  (!srcfileloc  "cp/pt.c" 28947)
+  (!srcfileloc  "cp/pt.c" 28908)
   nil )
  (!pair  "pending_template"
   (!type already_seen 2011)
@@ -32809,7 +32809,7 @@
   nil )
  (!pair  "module_htab"
   (!type already_seen 2074)
-  (!srcfileloc  "fortran/trans-decl.c" 5133)
+  (!srcfileloc  "fortran/trans-decl.c" 5134)
   nil )
  (!pair  "saved_local_decls"
   (!type already_seen 23)
@@ -32981,7 +32981,7 @@
   nil )
  (!pair  "dguide_cache"
   (!type already_seen 2026)
-  (!srcfileloc  "cp/pt.c" 28947)
+  (!srcfileloc  "cp/pt.c" 28908)
   (!options 
    (!option deletable string  "")
   )
