@@ -27,7 +27,7 @@ to determine which parts of a program are taking most of the execution
 time.  We assume that you know how to write, compile, and execute
 programs.  GNU 'gprof' was written by Jay Fenlason.
 
-   This manual is for 'gprof' (Ngentod BinUtils) version 2.36.50.
+   This manual is for 'gprof' (GNU Binutils) version 2.36.50.
 
    This document is distributed under the terms of the GNU Free
 Documentation License version 1.3.  A copy of the license is included in
@@ -2426,35 +2426,35 @@ their use in free software.
 
 Tag Table:
 Node: Top719
-Node: Introduction2049
-Node: Compiling4540
-Node: Executing8596
-Node: Invoking11489
-Node: Output Options12904
-Node: Analysis Options19996
-Node: Miscellaneous Options23916
-Node: Deprecated Options25170
-Node: Symspecs27233
-Node: Output29059
-Node: Flat Profile30099
-Node: Call Graph35052
-Node: Primary38284
-Node: Callers40872
-Node: Subroutines42990
-Node: Cycles44831
-Node: Line-by-line51608
-Node: Annotated Source55684
-Node: Inaccuracy58682
-Node: Sampling Error58940
-Node: Assumptions61844
-Node: How do I?63314
-Node: Incompatibilities64871
-Node: Details66365
-Node: Implementation66758
-Node: File Format72657
-Node: Internals76949
-Node: Debugging85439
-Node: GNU Free Documentation License87029
+Node: Introduction2045
+Node: Compiling4536
+Node: Executing8592
+Node: Invoking11485
+Node: Output Options12900
+Node: Analysis Options19992
+Node: Miscellaneous Options23912
+Node: Deprecated Options25166
+Node: Symspecs27229
+Node: Output29055
+Node: Flat Profile30095
+Node: Call Graph35048
+Node: Primary38280
+Node: Callers40868
+Node: Subroutines42986
+Node: Cycles44827
+Node: Line-by-line51604
+Node: Annotated Source55680
+Node: Inaccuracy58678
+Node: Sampling Error58936
+Node: Assumptions61840
+Node: How do I?63310
+Node: Incompatibilities64867
+Node: Details66361
+Node: Implementation66754
+Node: File Format72653
+Node: Internals76945
+Node: Debugging85435
+Node: GNU Free Documentation License87025
 
 End Tag Table
 
