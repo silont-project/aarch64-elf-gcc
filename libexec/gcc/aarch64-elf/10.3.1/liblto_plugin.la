@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/drone/src/../gcc-arm64/libexec/gcc/aarch64-elf/10.3.1'
+libdir='/home/runner/work/gcc-build/gcc-build/../gcc-arm64/libexec/gcc/aarch64-elf/10.3.1'
