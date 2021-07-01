@@ -49,6 +49,7 @@ Software development
 * Bfd: (bfd).                   The Binary File Descriptor library.
 * Binutils: (binutils).         The GNU binary utilities.
 * Cpp: (cpp).                   The GNU C preprocessor.
+* Cpplib: (cppinternals).       Cpplib internals.
 * Gas: (as).                    The GNU assembler.
 * Ld: (ld).                     The GNU linker.
 * g++: (gcc).                   The GNU C++ compiler.
@@ -61,3 +62,4 @@ Software development
                                   processing program.
 * gprof: (gprof).               Profiling your program's execution
 * lto-dump: (gcc) lto-dump.     'lto-dump'--Tool for dumping LTO object files.
+r program's execution
