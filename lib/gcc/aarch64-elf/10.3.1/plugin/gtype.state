@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "10.3.1 20210630")
+(!version  "10.3.1 20210714")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 218
@@ -27345,15 +27345,15 @@
  )
  
  (!type struct 1975 nil  gc_used "pending_noexcept"
-  (!srcfileloc  "cp/except.c" 1160)
+  (!srcfileloc  "cp/except.c" 1163)
   (!fields 2 
    (!pair  "fn"
     (!type already_seen 23)
-    (!srcfileloc  "cp/except.c" 1157)
+    (!srcfileloc  "cp/except.c" 1160)
     nil )
    (!pair  "loc"
     (!type already_seen 2)
-    (!srcfileloc  "cp/except.c" 1158)
+    (!srcfileloc  "cp/except.c" 1161)
     nil )
   )
   nil 1032 nil nil )
@@ -27363,15 +27363,15 @@
    (!type already_seen 1976)
   )
   gc_pointed_to "vec<pending_noexcept,va_gc>"
-  (!srcfileloc  "cp/except.c" 1160)
+  (!srcfileloc  "cp/except.c" 1163)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 79)
-    (!srcfileloc  "cp/except.c" 1160)
+    (!srcfileloc  "cp/except.c" 1163)
     nil )
    (!pair  "pending_noexcept"
     (!type already_seen 1975)
-    (!srcfileloc  "cp/except.c" 1160)
+    (!srcfileloc  "cp/except.c" 1163)
     nil )
   )
  )
@@ -28996,11 +28996,11 @@
   nil )
  (!pair  "pending_noexcept"
   (!type already_seen 1975)
-  (!srcfileloc  "cp/except.c" 1160)
+  (!srcfileloc  "cp/except.c" 1163)
   nil )
  (!pair  "vec<pending_noexcept,va_gc>"
   (!type already_seen 1976)
-  (!srcfileloc  "cp/except.c" 1160)
+  (!srcfileloc  "cp/except.c" 1163)
   nil )
  (!pair  "mangled_decl_hash"
   (!type already_seen 1972)
@@ -29400,7 +29400,7 @@
   nil )
  (!pair  "builtin_type"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6033)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6030)
   nil )
  (!pair  "pad_type_hasher"
   (!type already_seen 1768)
@@ -33186,7 +33186,7 @@
   nil )
  (!pair  "pending_noexcept_checks"
   (!type already_seen 1977)
-  (!srcfileloc  "cp/except.c" 1160)
+  (!srcfileloc  "cp/except.c" 1163)
   nil )
  (!pair  "ssdf_decls"
   (!type already_seen 84)
@@ -33696,17 +33696,17 @@
   (!type array 2184 nil  gc_used "(int) ATTR_LAST" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6203)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6200)
   nil )
  (!pair  "builtin_types"
   (!type array 2185 nil  gc_used "(int) BT_LAST + 1" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6036)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6033)
   nil )
  (!pair  "dummy_global"
   (!type already_seen 23)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 5797)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 5794)
   nil )
  (!pair  "pad_type_hash_table"
   (!type already_seen 1770)
