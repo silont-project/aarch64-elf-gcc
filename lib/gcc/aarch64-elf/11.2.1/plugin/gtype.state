@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "11.2.1 20210804")
+(!version  "11.2.1 20210808")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 223
@@ -26048,31 +26048,31 @@
    (!type already_seen 1861)
   )
   gc_pointed_to "vec<tree_gc_vec,va_gc>"
-  (!srcfileloc  "c-family/c-common.c" 8012)
+  (!srcfileloc  "c-family/c-common.c" 8015)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 79)
-    (!srcfileloc  "c-family/c-common.c" 8012)
+    (!srcfileloc  "c-family/c-common.c" 8015)
     nil )
    (!pair  "tree_gc_vec"
     (!type already_seen 84)
-    (!srcfileloc  "c-family/c-common.c" 8012)
+    (!srcfileloc  "c-family/c-common.c" 8015)
     nil )
   )
  )
  
  (!type user_struct 1863 nil  gc_unused "hash_set<char*,false,nofree_string_hash>"
-  (!srcfileloc  "c-family/c-common.c" 8971)
+  (!srcfileloc  "c-family/c-common.c" 8974)
   (!fields 2 
    (!pair  "nofree_string_hash"
     (!type undefined 1864 nil  gc_unused "nofree_string_hash"
-     (!srcfileloc  "c-family/c-common.c" 8971)
+     (!srcfileloc  "c-family/c-common.c" 8974)
     )
-    (!srcfileloc  "c-family/c-common.c" 8971)
+    (!srcfileloc  "c-family/c-common.c" 8974)
     nil )
    (!pair  "false"
     (!type already_seen 861)
-    (!srcfileloc  "c-family/c-common.c" 8971)
+    (!srcfileloc  "c-family/c-common.c" 8974)
     nil )
   )
  )
@@ -26080,7 +26080,7 @@
  (!type already_seen 1864)
  
  (!type user_struct 1865 nil  gc_unused "hash_map<char*,per_file_includes_t*>"
-  (!srcfileloc  "c-family/c-common.c" 8976)
+  (!srcfileloc  "c-family/c-common.c" 8979)
   (!fields 1 
    (!pair  "per_file_includes_t"
     (!type pointer 1866 nil  gc_unused
@@ -26090,7 +26090,7 @@
       (!fields 0 )
       nil 0 nil nil )
     )
-    (!srcfileloc  "c-family/c-common.c" 8976)
+    (!srcfileloc  "c-family/c-common.c" 8979)
     nil )
   )
  )
@@ -30668,31 +30668,31 @@
   nil )
  (!pair  "added_includes_t"
   (!type already_seen 1865)
-  (!srcfileloc  "c-family/c-common.c" 8976)
+  (!srcfileloc  "c-family/c-common.c" 8979)
   nil )
  (!pair  "hash_map<char*,per_file_includes_t*>"
   (!type already_seen 1865)
-  (!srcfileloc  "c-family/c-common.c" 8976)
+  (!srcfileloc  "c-family/c-common.c" 8979)
   nil )
  (!pair  "per_file_includes_t"
   (!type already_seen 1863)
-  (!srcfileloc  "c-family/c-common.c" 8971)
+  (!srcfileloc  "c-family/c-common.c" 8974)
   nil )
  (!pair  "nofree_string_hash"
   (!type already_seen 1864)
-  (!srcfileloc  "c-family/c-common.c" 8971)
+  (!srcfileloc  "c-family/c-common.c" 8974)
   nil )
  (!pair  "hash_set<char*,false,nofree_string_hash>"
   (!type already_seen 1863)
-  (!srcfileloc  "c-family/c-common.c" 8971)
+  (!srcfileloc  "c-family/c-common.c" 8974)
   nil )
  (!pair  "vec<tree_gc_vec,va_gc>"
   (!type already_seen 1861)
-  (!srcfileloc  "c-family/c-common.c" 8012)
+  (!srcfileloc  "c-family/c-common.c" 8015)
   nil )
  (!pair  "tree_gc_vec"
   (!type already_seen 84)
-  (!srcfileloc  "c-family/c-common.c" 8011)
+  (!srcfileloc  "c-family/c-common.c" 8014)
   nil )
  (!pair  "vec<const_char_p,va_gc>"
   (!type already_seen 1859)
@@ -31182,7 +31182,7 @@
   nil )
  (!pair  "aarch64_cc"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64.c" 2017)
+  (!srcfileloc  "config/aarch64/aarch64.c" 2155)
   nil )
  (!pair  "omp_declare_variant_alt_hasher"
   (!type already_seen 1598)
@@ -35067,7 +35067,7 @@
  )
  (!pair  "tree_vector_cache"
   (!type already_seen 1862)
-  (!srcfileloc  "c-family/c-common.c" 8012)
+  (!srcfileloc  "c-family/c-common.c" 8015)
   (!options 
    (!option deletable string  "")
   )
@@ -35492,25 +35492,25 @@
   nil )
  (!pair  "aarch64_sls_shared_thunks_needed"
   (!type already_seen 2)
-  (!srcfileloc  "config/aarch64/aarch64.c" 25340)
+  (!srcfileloc  "config/aarch64/aarch64.c" 25616)
   nil )
  (!pair  "aarch64_sls_shared_thunks"
   (!type array 2328 nil  gc_used "30" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "config/aarch64/aarch64.c" 25339)
+  (!srcfileloc  "config/aarch64/aarch64.c" 25615)
   nil )
  (!pair  "va_list_type"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64.c" 18062)
+  (!srcfileloc  "config/aarch64/aarch64.c" 18333)
   nil )
  (!pair  "aarch64_previous_fndecl"
   (!type already_seen 23)
-  (!srcfileloc  "config/aarch64/aarch64.c" 17044)
+  (!srcfileloc  "config/aarch64/aarch64.c" 17315)
   nil )
  (!pair  "tls_get_addr_libfunc"
   (!type already_seen 100)
-  (!srcfileloc  "config/aarch64/aarch64.c" 3452)
+  (!srcfileloc  "config/aarch64/aarch64.c" 3590)
   nil )
  (!pair  "stack_chk_fail_decl"
   (!type already_seen 23)
