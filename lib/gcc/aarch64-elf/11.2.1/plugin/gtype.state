@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "11.2.1 20210808")
+(!version  "11.2.1 20210812")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 223
@@ -27543,7 +27543,7 @@
    (!type already_seen 1986)
   )
   gc_pointed_to "cp_parser"
-  (!srcfileloc  "cp/parser.c" 44840)
+  (!srcfileloc  "cp/parser.c" 44843)
   (!fields 38 
    (!pair  "lexer"
     (!type already_seen 1972)
@@ -28329,19 +28329,19 @@
   nil 0 nil nil )
  
  (!type struct 2077 nil  gc_pointed_to "subsumption_entry"
-  (!srcfileloc  "cp/logic.cc" 777)
+  (!srcfileloc  "cp/logic.cc" 727)
   (!fields 3 
    (!pair  "lhs"
     (!type already_seen 23)
-    (!srcfileloc  "cp/logic.cc" 774)
+    (!srcfileloc  "cp/logic.cc" 724)
     nil )
    (!pair  "rhs"
     (!type already_seen 23)
-    (!srcfileloc  "cp/logic.cc" 775)
+    (!srcfileloc  "cp/logic.cc" 725)
     nil )
    (!pair  "result"
     (!type already_seen 2)
-    (!srcfileloc  "cp/logic.cc" 776)
+    (!srcfileloc  "cp/logic.cc" 726)
     nil )
   )
   (!options 
@@ -28350,7 +28350,7 @@
   1032 nil nil )
  
  (!type struct 2078 nil  gc_used "subsumption_hasher"
-  (!srcfileloc  "cp/logic.cc" 803)
+  (!srcfileloc  "cp/logic.cc" 753)
   (!fields 0 )
   nil 1032 nil nil )
  
@@ -28359,11 +28359,11 @@
    (!type already_seen 2079)
   )
   gc_pointed_to "hash_table<subsumption_hasher>"
-  (!srcfileloc  "cp/logic.cc" 803)
+  (!srcfileloc  "cp/logic.cc" 753)
   (!fields 1 
    (!pair  "subsumption_hasher"
     (!type already_seen 2078)
-    (!srcfileloc  "cp/logic.cc" 803)
+    (!srcfileloc  "cp/logic.cc" 753)
     nil )
   )
  )
@@ -28843,7 +28843,7 @@
   nil 0 nil nil )
  
  (!type undefined 2147 nil  gc_unused "class_to_loc_map_t::iterator"
-  (!srcfileloc  "cp/parser.c" 32556)
+  (!srcfileloc  "cp/parser.c" 32559)
  )
  
  (!type struct 2148 
@@ -30092,15 +30092,15 @@
   nil )
  (!pair  "cp_parser"
   (!type already_seen 1986)
-  (!srcfileloc  "cp/parser.c" 44840)
+  (!srcfileloc  "cp/parser.c" 44843)
   nil )
  (!pair  "iter_t"
   (!type already_seen 2147)
-  (!srcfileloc  "cp/parser.c" 32556)
+  (!srcfileloc  "cp/parser.c" 32559)
   nil )
  (!pair  "class_to_loc_map_t::iterator"
   (!type already_seen 2147)
-  (!srcfileloc  "cp/parser.c" 32556)
+  (!srcfileloc  "cp/parser.c" 32559)
   nil )
  (!pair  "cp_parser_expression_stack"
   (!type array 2270 nil  gc_unused "NUM_PREC_VALUES" 
@@ -30292,11 +30292,11 @@
   nil )
  (!pair  "subsumption_hasher"
   (!type already_seen 2078)
-  (!srcfileloc  "cp/logic.cc" 803)
+  (!srcfileloc  "cp/logic.cc" 753)
   nil )
  (!pair  "hash_table<subsumption_hasher>"
   (!type already_seen 2079)
-  (!srcfileloc  "cp/logic.cc" 803)
+  (!srcfileloc  "cp/logic.cc" 753)
   nil )
  (!pair  "conv_type_hasher"
   (!type already_seen 2072)
@@ -34510,15 +34510,15 @@
   nil )
  (!pair  "generic_parm_count"
   (!type already_seen 2)
-  (!srcfileloc  "cp/parser.c" 45332)
+  (!srcfileloc  "cp/parser.c" 45335)
   nil )
  (!pair  "the_parser"
   (!type already_seen 1987)
-  (!srcfileloc  "cp/parser.c" 44840)
+  (!srcfileloc  "cp/parser.c" 44843)
   nil )
  (!pair  "cp_parser_decl_specs_attrs"
   (!type already_seen 84)
-  (!srcfileloc  "cp/parser.c" 18378)
+  (!srcfileloc  "cp/parser.c" 18381)
   nil )
  (!pair  "cp_parser_context_free_list"
   (!type already_seen 1979)
@@ -34612,7 +34612,7 @@
   nil )
  (!pair  "subsumption_cache"
   (!type already_seen 2080)
-  (!srcfileloc  "cp/logic.cc" 803)
+  (!srcfileloc  "cp/logic.cc" 753)
   (!options 
    (!option deletable string  "")
   )
