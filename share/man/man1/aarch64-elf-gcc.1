@@ -133,7 +133,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2021-08-22" "gcc-11.2.1" "GNU"
+.TH GCC 1 "2021-08-25" "gcc-11.2.1" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -810,6 +810,7 @@ in the following sections.
 \&\-mverbose\-cost\-dump 
 \&\-mpure\-code 
 \&\-mcmse 
+\&\-mfix\-cmse\-cve\-2021\-35465 
 \&\-mfdpic\fR
 .Sp
 \&\fI\s-1AVR\s0 Options\fR
@@ -1379,7 +1380,7 @@ See \s-1RS/6000\s0 and PowerPC Options.
 \&\-mno\-wide\-multiply  \-mrtd  \-malign\-double 
 \&\-mpreferred\-stack\-boundary=\fR\fInum\fR 
 \&\fB\-mincoming\-stack\-boundary=\fR\fInum\fR 
-\&\fB\-mcld  \-mcx16  \-msahf  \-mmovbe  \-mcrc32 
+\&\fB\-mcld  \-mcx16  \-msahf  \-mmovbe  \-mcrc32 \-mmwait 
 \&\-mrecip  \-mrecip=\fR\fIopt\fR 
 \&\fB\-mvzeroupper  \-mprefer\-avx128  \-mprefer\-vector\-width=\fR\fIopt\fR 
 \&\fB\-mmmx  \-msse  \-msse2  \-msse3  \-mssse3  \-msse4.1  \-msse4.2  \-msse4  \-mavx 
@@ -19733,6 +19734,13 @@ is only available when generating non-pic code for M\-profile targets.
 Generate secure code as per the \*(L"ARMv8\-M Security Extensions: Requirements on
 Development Tools Engineering Specification\*(R", which can be found on
 <\fBhttps://developer.arm.com/documentation/ecm0359818/latest/\fR>.
+.IP "\fB\-mfix\-cmse\-cve\-2021\-35465\fR" 4
+.IX Item "-mfix-cmse-cve-2021-35465"
+Mitigate against a potential security issue with the \f(CW\*(C`VLLDM\*(C'\fR instruction
+in some M\-profile devices when using \s-1CMSE\s0 (\s-1CVE\-2021\-365465\s0).  This option is
+enabled by default when the option \fB\-mcpu=\fR is used with
+\&\f(CW\*(C`cortex\-m33\*(C'\fR, \f(CW\*(C`cortex\-m35p\*(C'\fR or \f(CW\*(C`cortex\-m55\*(C'\fR.  The option
+\&\fB\-mno\-fix\-cmse\-cve\-2021\-35465\fR can be used to disable the mitigation.
 .IP "\fB\-mfdpic\fR" 4
 .IX Item "-mfdpic"
 .PD 0
@@ -30010,6 +30018,11 @@ from x86 Control-flow Enforcement Technology (\s-1CET\s0).
 This option enables built-in functions \f(CW\*(C`_\|_builtin_ia32_crc32qi\*(C'\fR,
 \&\f(CW\*(C`_\|_builtin_ia32_crc32hi\*(C'\fR, \f(CW\*(C`_\|_builtin_ia32_crc32si\*(C'\fR and
 \&\f(CW\*(C`_\|_builtin_ia32_crc32di\*(C'\fR to generate the \f(CW\*(C`crc32\*(C'\fR machine instruction.
+.IP "\fB\-mmwait\fR" 4
+.IX Item "-mmwait"
+This option enables built-in functions \f(CW\*(C`_\|_builtin_ia32_monitor\*(C'\fR,
+and \f(CW\*(C`_\|_builtin_ia32_mwait\*(C'\fR to generate the \f(CW\*(C`monitor\*(C'\fR and
+\&\f(CW\*(C`mwait\*(C'\fR machine instructions.
 .IP "\fB\-mrecip\fR" 4
 .IX Item "-mrecip"
 This option enables use of \f(CW\*(C`RCPSS\*(C'\fR and \f(CW\*(C`RSQRTSS\*(C'\fR instructions
