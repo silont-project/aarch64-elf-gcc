@@ -57554,10 +57554,11 @@ such objects behave unspecified when being assigned.  For example:
 
      struct Base{
        char *name;
-       Base(char *n) : name(strdup(n)){}
+       Base(const char *n) : name(strdup(n)){}
        Base& operator= (const Base& other){
         free (name);
         name = strdup (other.name);
+        return *this;
        }
      };
 
@@ -57589,8 +57590,8 @@ in the example).
  G++ implements the "intuitive" algorithm for copy-assignment: assign
 all direct bases, then assign all members.  In that algorithm, the
 virtual base subobject can be encountered more than once.  In the
-example, copying proceeds in the following order: 'val', 'name' (via
-'strdup'), 'bval', and 'name' again.
+example, copying proceeds in the following order: 'name' (via 'strdup'),
+'val', 'name' again, and 'bval'.
 
  If application code relies on copy-assignment, a user-defined
 copy-assignment operator removes any uncertainties.  With such an
@@ -67519,20 +67520,20 @@ Node: Name lookup2436852
 Ref: Name lookup-Footnote-12441633
 Node: Temporaries2441822
 Node: Copy Assignment2443798
-Node: Non-bugs2445605
-Node: Warnings and Errors2456111
-Node: Bugs2457873
-Node: Bug Criteria2458340
-Node: Bug Reporting2460550
-Node: Service2460768
-Node: Contributing2461588
-Node: Funding2462329
-Node: GNU Project2464819
-Node: Copying2465465
-Node: GNU Free Documentation License2502973
-Node: Contributors2528091
-Node: Option Index2569064
-Node: Keyword Index2848543
+Node: Non-bugs2445633
+Node: Warnings and Errors2456139
+Node: Bugs2457901
+Node: Bug Criteria2458368
+Node: Bug Reporting2460578
+Node: Service2460796
+Node: Contributing2461616
+Node: Funding2462357
+Node: GNU Project2464847
+Node: Copying2465493
+Node: GNU Free Documentation License2503001
+Node: Contributors2528119
+Node: Option Index2569092
+Node: Keyword Index2848571
 
 End Tag Table
 
