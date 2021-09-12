@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "10.3.1 20210909")
+(!version  "10.3.1 20210912")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 218
@@ -28025,7 +28025,7 @@
   nil 0 nil nil )
  
  (!type struct 2072 nil  gc_used "module_hasher"
-  (!srcfileloc  "fortran/trans-decl.c" 5140)
+  (!srcfileloc  "fortran/trans-decl.c" 5141)
   (!fields 0 )
   nil 32 nil nil )
  
@@ -28034,11 +28034,11 @@
    (!type already_seen 2073)
   )
   gc_pointed_to "hash_table<module_hasher>"
-  (!srcfileloc  "fortran/trans-decl.c" 5140)
+  (!srcfileloc  "fortran/trans-decl.c" 5141)
   (!fields 1 
    (!pair  "module_hasher"
     (!type already_seen 2072)
-    (!srcfileloc  "fortran/trans-decl.c" 5140)
+    (!srcfileloc  "fortran/trans-decl.c" 5141)
     nil )
   )
  )
@@ -28814,11 +28814,11 @@
   nil )
  (!pair  "module_hasher"
   (!type already_seen 2072)
-  (!srcfileloc  "fortran/trans-decl.c" 5140)
+  (!srcfileloc  "fortran/trans-decl.c" 5141)
   nil )
  (!pair  "hash_table<module_hasher>"
   (!type already_seen 2073)
-  (!srcfileloc  "fortran/trans-decl.c" 5140)
+  (!srcfileloc  "fortran/trans-decl.c" 5141)
   nil )
  (!pair  "tree_frame_info"
   (!type already_seen 662)
@@ -32809,7 +32809,7 @@
   nil )
  (!pair  "module_htab"
   (!type already_seen 2074)
-  (!srcfileloc  "fortran/trans-decl.c" 5140)
+  (!srcfileloc  "fortran/trans-decl.c" 5141)
   nil )
  (!pair  "saved_local_decls"
   (!type already_seen 23)
