@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "11.2.1 20210912")
+(!version  "11.2.1 20210916")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 223
@@ -23890,7 +23890,7 @@
   nil 0 nil nil )
  
  (!type struct 1515 nil  gc_used "tm_clone_hasher"
-  (!srcfileloc  "varasm.c" 6337)
+  (!srcfileloc  "varasm.c" 6343)
   (!fields 0 )
   nil 2047 nil nil )
  
@@ -23899,11 +23899,11 @@
    (!type already_seen 1516)
   )
   gc_pointed_to "hash_table<tm_clone_hasher>"
-  (!srcfileloc  "varasm.c" 6337)
+  (!srcfileloc  "varasm.c" 6343)
   (!fields 1 
    (!pair  "tm_clone_hasher"
     (!type already_seen 1515)
-    (!srcfileloc  "varasm.c" 6337)
+    (!srcfileloc  "varasm.c" 6343)
     nil )
   )
  )
@@ -30720,7 +30720,7 @@
   nil )
  (!pair  "builtin_type"
   (!type already_seen 2)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6137)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6140)
   nil )
  (!pair  "pad_type_hasher"
   (!type already_seen 1837)
@@ -30768,7 +30768,7 @@
   nil )
  (!pair  "vinfo_t"
   (!type already_seen 1816)
-  (!srcfileloc  "ada/gcc-interface/decl.c" 7673)
+  (!srcfileloc  "ada/gcc-interface/decl.c" 7686)
   nil )
  (!pair  "intrin_binding_t"
   (!type already_seen 1814)
@@ -31274,11 +31274,11 @@
   nil )
  (!pair  "tm_clone_hasher"
   (!type already_seen 1515)
-  (!srcfileloc  "varasm.c" 6337)
+  (!srcfileloc  "varasm.c" 6343)
   nil )
  (!pair  "hash_table<tm_clone_hasher>"
   (!type already_seen 1516)
-  (!srcfileloc  "varasm.c" 6337)
+  (!srcfileloc  "varasm.c" 6343)
   nil )
  (!pair  "const_rtx_desc_hasher"
   (!type already_seen 994)
@@ -34698,11 +34698,11 @@
   nil )
  (!pair  "start_cleanup_cnt"
   (!type already_seen 2)
-  (!srcfileloc  "cp/decl.c" 8974)
+  (!srcfileloc  "cp/decl.c" 9006)
   nil )
  (!pair  "decomp_type_table"
   (!type already_seen 925)
-  (!srcfileloc  "cp/decl.c" 8427)
+  (!srcfileloc  "cp/decl.c" 8459)
   (!options 
    (!option cache string  "")
   )
@@ -35190,17 +35190,17 @@
   (!type array 2314 nil  gc_used "(int) ATTR_LAST" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6307)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6310)
   nil )
  (!pair  "builtin_types"
   (!type array 2315 nil  gc_used "(int) BT_LAST + 1" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "ada/gcc-interface/utils.c" 6140)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 6143)
   nil )
  (!pair  "dummy_global"
   (!type already_seen 23)
-  (!srcfileloc  "ada/gcc-interface/utils.c" 5893)
+  (!srcfileloc  "ada/gcc-interface/utils.c" 5896)
   nil )
  (!pair  "pad_type_hash_table"
   (!type already_seen 1839)
@@ -35617,22 +35617,22 @@
   nil )
  (!pair  "elf_fini_array_section"
   (!type already_seen 213)
-  (!srcfileloc  "varasm.c" 8348)
+  (!srcfileloc  "varasm.c" 8354)
   nil )
  (!pair  "elf_init_array_section"
   (!type already_seen 213)
-  (!srcfileloc  "varasm.c" 8347)
+  (!srcfileloc  "varasm.c" 8353)
   nil )
  (!pair  "tm_clone_hash"
   (!type already_seen 1517)
-  (!srcfileloc  "varasm.c" 6337)
+  (!srcfileloc  "varasm.c" 6343)
   (!options 
    (!option cache string  "")
   )
  )
  (!pair  "weakref_targets"
   (!type already_seen 23)
-  (!srcfileloc  "varasm.c" 5992)
+  (!srcfileloc  "varasm.c" 5998)
   nil )
  (!pair  "const_desc_htab"
   (!type already_seen 1510)
