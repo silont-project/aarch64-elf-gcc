@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "10.3.1 20210930")
+(!version  "10.3.1 20220121")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 218
@@ -1526,19 +1526,19 @@
                                                          (!fields 4 
                                                           (!pair  "binfo"
                                                            (!type already_seen 23)
-                                                           (!srcfileloc  "cp/cp-tree.h" 7108)
+                                                           (!srcfileloc  "cp/cp-tree.h" 7127)
                                                            nil )
                                                           (!pair  "decl"
                                                            (!type already_seen 23)
-                                                           (!srcfileloc  "cp/cp-tree.h" 7110)
+                                                           (!srcfileloc  "cp/cp-tree.h" 7129)
                                                            nil )
                                                           (!pair  "diag_decl"
                                                            (!type already_seen 23)
-                                                           (!srcfileloc  "cp/cp-tree.h" 7112)
+                                                           (!srcfileloc  "cp/cp-tree.h" 7131)
                                                            nil )
                                                           (!pair  "loc"
                                                            (!type already_seen 2)
-                                                           (!srcfileloc  "cp/cp-tree.h" 7114)
+                                                           (!srcfileloc  "cp/cp-tree.h" 7133)
                                                            nil )
                                                          )
                                                          nil 1032 nil nil )
@@ -7928,7 +7928,7 @@
                                 (!fields 2 
                                  (!pair  "int"
                                   (!type undefined 378 nil  gc_unused "int"
-                                   (!srcfileloc  "coretypes.h" 352)
+                                   (!srcfileloc  "coretypes.h" 354)
                                   )
                                   (!srcfileloc  "except.h" 204)
                                   nil )
@@ -17412,25 +17412,25 @@
   nil 0 nil nil )
  
  (!type user_struct 853 nil  gc_unused "std::pair<tree,tree>"
-  (!srcfileloc  "coretypes.h" 351)
+  (!srcfileloc  "coretypes.h" 353)
   (!fields 2 
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "coretypes.h" 351)
+    (!srcfileloc  "coretypes.h" 353)
     nil )
    (!pair  "tree"
     (!type already_seen 23)
-    (!srcfileloc  "coretypes.h" 351)
+    (!srcfileloc  "coretypes.h" 353)
     nil )
   )
  )
  
  (!type user_struct 854 nil  gc_unused "std::pair<char*,int>"
-  (!srcfileloc  "coretypes.h" 352)
+  (!srcfileloc  "coretypes.h" 354)
   (!fields 1 
    (!pair  "int"
     (!type already_seen 378)
-    (!srcfileloc  "coretypes.h" 352)
+    (!srcfileloc  "coretypes.h" 354)
     nil )
   )
  )
@@ -20960,31 +20960,31 @@
    (!type already_seen 1180)
   )
   gc_pointed_to "param_access"
-  (!srcfileloc  "ipa-sra.c" 123)
+  (!srcfileloc  "ipa-sra.c" 121)
   (!fields 6 
    (!pair  "type"
     (!type already_seen 23)
-    (!srcfileloc  "ipa-sra.c" 106)
+    (!srcfileloc  "ipa-sra.c" 104)
     nil )
    (!pair  "alias_ptr_type"
     (!type already_seen 23)
-    (!srcfileloc  "ipa-sra.c" 110)
+    (!srcfileloc  "ipa-sra.c" 108)
     nil )
    (!pair  "unit_offset"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 114)
+    (!srcfileloc  "ipa-sra.c" 112)
     nil )
    (!pair  "unit_size"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 115)
+    (!srcfileloc  "ipa-sra.c" 113)
     nil )
    (!pair  "certain"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 120)
+    (!srcfileloc  "ipa-sra.c" 118)
     nil )
    (!pair  "reverse"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 122)
+    (!srcfileloc  "ipa-sra.c" 120)
     nil )
   )
   nil 2047 nil nil )
@@ -20998,45 +20998,45 @@
    (!type already_seen 1183)
   )
   gc_pointed_to "vec<param_access*,va_gc>"
-  (!srcfileloc  "ipa-sra.c" 165)
+  (!srcfileloc  "ipa-sra.c" 163)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 79)
-    (!srcfileloc  "ipa-sra.c" 165)
+    (!srcfileloc  "ipa-sra.c" 163)
     nil )
    (!pair  "param_access"
     (!type already_seen 1181)
-    (!srcfileloc  "ipa-sra.c" 165)
+    (!srcfileloc  "ipa-sra.c" 163)
     nil )
   )
  )
  
  (!type struct 1185 nil  gc_used "isra_param_desc"
-  (!srcfileloc  "ipa-sra.c" 254)
+  (!srcfileloc  "ipa-sra.c" 252)
   (!fields 6 
    (!pair  "accesses"
     (!type already_seen 1184)
-    (!srcfileloc  "ipa-sra.c" 165)
+    (!srcfileloc  "ipa-sra.c" 163)
     nil )
    (!pair  "param_size_limit"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 168)
+    (!srcfileloc  "ipa-sra.c" 166)
     nil )
    (!pair  "size_reached"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 170)
+    (!srcfileloc  "ipa-sra.c" 168)
     nil )
    (!pair  "locally_unused"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 174)
+    (!srcfileloc  "ipa-sra.c" 172)
     nil )
    (!pair  "split_candidate"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 176)
+    (!srcfileloc  "ipa-sra.c" 174)
     nil )
    (!pair  "by_ref"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 178)
+    (!srcfileloc  "ipa-sra.c" 176)
     nil )
   )
   nil 2047 nil nil )
@@ -21046,43 +21046,43 @@
   nil 0 nil nil )
  
  (!type struct 1187 nil  gc_pointed_to "isra_func_summary"
-  (!srcfileloc  "ipa-sra.c" 272)
+  (!srcfileloc  "ipa-sra.c" 270)
   (!fields 5 
    (!pair  "m_parameters"
     (!type pointer 1188 nil  gc_used
      (!type user_struct 1189 
       (!type already_seen 1188)
       gc_pointed_to "vec<isra_param_desc,va_gc>"
-      (!srcfileloc  "ipa-sra.c" 254)
+      (!srcfileloc  "ipa-sra.c" 252)
       (!fields 2 
        (!pair  "va_gc"
         (!type already_seen 79)
-        (!srcfileloc  "ipa-sra.c" 254)
+        (!srcfileloc  "ipa-sra.c" 252)
         nil )
        (!pair  "isra_param_desc"
         (!type already_seen 1185)
-        (!srcfileloc  "ipa-sra.c" 254)
+        (!srcfileloc  "ipa-sra.c" 252)
         nil )
       )
      )
     )
-    (!srcfileloc  "ipa-sra.c" 254)
+    (!srcfileloc  "ipa-sra.c" 252)
     nil )
    (!pair  "m_candidate"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 258)
+    (!srcfileloc  "ipa-sra.c" 256)
     nil )
    (!pair  "m_returns_value"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 261)
+    (!srcfileloc  "ipa-sra.c" 259)
     nil )
    (!pair  "m_return_ignored"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 266)
+    (!srcfileloc  "ipa-sra.c" 264)
     nil )
    (!pair  "m_queued"
     (!type already_seen 2)
-    (!srcfileloc  "ipa-sra.c" 271)
+    (!srcfileloc  "ipa-sra.c" 269)
     nil )
   )
   (!options 
@@ -21105,7 +21105,7 @@
    (!type already_seen 1192)
   )
   gc_pointed_to "ipa_sra_function_summaries"
-  (!srcfileloc  "ipa-sra.c" 380)
+  (!srcfileloc  "ipa-sra.c" 378)
   (!fields 0 )
  )
  
@@ -26355,31 +26355,31 @@
   nil 0 nil nil )
  
  (!type struct 1867 nil  gc_used "ovl_op_info_t"
-  (!srcfileloc  "cp/cp-tree.h" 5870)
+  (!srcfileloc  "cp/cp-tree.h" 5889)
   (!fields 6 
    (!pair  "identifier"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-tree.h" 5856)
+    (!srcfileloc  "cp/cp-tree.h" 5875)
     nil )
    (!pair  "name"
     (!type already_seen 11)
-    (!srcfileloc  "cp/cp-tree.h" 5858)
+    (!srcfileloc  "cp/cp-tree.h" 5877)
     nil )
    (!pair  "mangled_name"
     (!type already_seen 11)
-    (!srcfileloc  "cp/cp-tree.h" 5860)
+    (!srcfileloc  "cp/cp-tree.h" 5879)
     nil )
    (!pair  "tree_code"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-tree.h" 5862)
+    (!srcfileloc  "cp/cp-tree.h" 5881)
     nil )
    (!pair  "ovl_op_code"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-tree.h" 5864)
+    (!srcfileloc  "cp/cp-tree.h" 5883)
     nil )
    (!pair  "flags"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-tree.h" 5866)
+    (!srcfileloc  "cp/cp-tree.h" 5885)
     nil )
   )
   nil 1032 nil nil )
@@ -26405,27 +26405,27 @@
   (!fields 6 
    (!pair  "next"
     (!type already_seen 1872)
-    (!srcfileloc  "cp/cp-tree.h" 6149)
+    (!srcfileloc  "cp/cp-tree.h" 6168)
     nil )
    (!pair  "tldcl"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-tree.h" 6161)
+    (!srcfileloc  "cp/cp-tree.h" 6180)
     nil )
    (!pair  "targs"
     (!type already_seen 23)
-    (!srcfileloc  "cp/cp-tree.h" 6161)
+    (!srcfileloc  "cp/cp-tree.h" 6180)
     nil )
    (!pair  "locus"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-tree.h" 6206)
+    (!srcfileloc  "cp/cp-tree.h" 6225)
     nil )
    (!pair  "errors"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-tree.h" 6209)
+    (!srcfileloc  "cp/cp-tree.h" 6228)
     nil )
    (!pair  "refcount"
     (!type already_seen 2)
-    (!srcfileloc  "cp/cp-tree.h" 6217)
+    (!srcfileloc  "cp/cp-tree.h" 6236)
     nil )
   )
   (!options 
@@ -27081,47 +27081,55 @@
   nil 0 nil nil )
  
  (!type struct 1937 nil  gc_pointed_to "coroutine_info"
-  (!srcfileloc  "cp/coroutines.cc" 98)
-  (!fields 10 
+  (!srcfileloc  "cp/coroutines.cc" 100)
+  (!fields 12 
    (!pair  "function_decl"
     (!type already_seen 23)
     (!srcfileloc  "cp/coroutines.cc" 84)
     nil )
-   (!pair  "promise_type"
+   (!pair  "actor_decl"
     (!type already_seen 23)
     (!srcfileloc  "cp/coroutines.cc" 85)
     nil )
-   (!pair  "handle_type"
+   (!pair  "destroy_decl"
     (!type already_seen 23)
     (!srcfileloc  "cp/coroutines.cc" 86)
     nil )
-   (!pair  "self_h_proxy"
+   (!pair  "promise_type"
     (!type already_seen 23)
     (!srcfileloc  "cp/coroutines.cc" 87)
     nil )
+   (!pair  "handle_type"
+    (!type already_seen 23)
+    (!srcfileloc  "cp/coroutines.cc" 88)
+    nil )
+   (!pair  "self_h_proxy"
+    (!type already_seen 23)
+    (!srcfileloc  "cp/coroutines.cc" 89)
+    nil )
    (!pair  "promise_proxy"
     (!type already_seen 23)
-    (!srcfileloc  "cp/coroutines.cc" 90)
+    (!srcfileloc  "cp/coroutines.cc" 92)
     nil )
    (!pair  "return_void"
     (!type already_seen 23)
-    (!srcfileloc  "cp/coroutines.cc" 91)
+    (!srcfileloc  "cp/coroutines.cc" 93)
     nil )
    (!pair  "first_coro_keyword"
     (!type already_seen 2)
-    (!srcfileloc  "cp/coroutines.cc" 92)
+    (!srcfileloc  "cp/coroutines.cc" 94)
     nil )
    (!pair  "coro_ret_type_error_emitted"
     (!type already_seen 2)
-    (!srcfileloc  "cp/coroutines.cc" 95)
+    (!srcfileloc  "cp/coroutines.cc" 97)
     nil )
    (!pair  "coro_promise_error_emitted"
     (!type already_seen 2)
-    (!srcfileloc  "cp/coroutines.cc" 96)
+    (!srcfileloc  "cp/coroutines.cc" 98)
     nil )
    (!pair  "coro_co_return_error_emitted"
     (!type already_seen 2)
-    (!srcfileloc  "cp/coroutines.cc" 97)
+    (!srcfileloc  "cp/coroutines.cc" 99)
     nil )
   )
   (!options 
@@ -27130,7 +27138,7 @@
   1032 nil nil )
  
  (!type struct 1938 nil  gc_used "coroutine_info_hasher"
-  (!srcfileloc  "cp/coroutines.cc" 112)
+  (!srcfileloc  "cp/coroutines.cc" 114)
   (!fields 0 )
   nil 1032 nil nil )
  
@@ -27139,11 +27147,11 @@
    (!type already_seen 1939)
   )
   gc_pointed_to "hash_table<coroutine_info_hasher>"
-  (!srcfileloc  "cp/coroutines.cc" 112)
+  (!srcfileloc  "cp/coroutines.cc" 114)
   (!fields 1 
    (!pair  "coroutine_info_hasher"
     (!type already_seen 1938)
-    (!srcfileloc  "cp/coroutines.cc" 112)
+    (!srcfileloc  "cp/coroutines.cc" 114)
     nil )
   )
  )
@@ -29048,11 +29056,11 @@
   nil )
  (!pair  "coroutine_info_hasher"
   (!type already_seen 1938)
-  (!srcfileloc  "cp/coroutines.cc" 112)
+  (!srcfileloc  "cp/coroutines.cc" 114)
   nil )
  (!pair  "hash_table<coroutine_info_hasher>"
   (!type already_seen 1939)
-  (!srcfileloc  "cp/coroutines.cc" 112)
+  (!srcfileloc  "cp/coroutines.cc" 114)
   nil )
  (!pair  "sat_hasher"
   (!type already_seen 1933)
@@ -29160,35 +29168,35 @@
   nil )
  (!pair  "cp_parameter_declarator"
   (!type already_seen 1870)
-  (!srcfileloc  "cp/cp-tree.h" 6049)
+  (!srcfileloc  "cp/cp-tree.h" 6068)
   nil )
  (!pair  "cp_declarator"
   (!type already_seen 1869)
-  (!srcfileloc  "cp/cp-tree.h" 6047)
+  (!srcfileloc  "cp/cp-tree.h" 6066)
   nil )
  (!pair  "cp_virt_specifiers"
   (!type already_seen 2)
-  (!srcfileloc  "cp/cp-tree.h" 5913)
+  (!srcfileloc  "cp/cp-tree.h" 5932)
   nil )
  (!pair  "cp_cv_quals"
   (!type already_seen 2)
-  (!srcfileloc  "cp/cp-tree.h" 5897)
+  (!srcfileloc  "cp/cp-tree.h" 5916)
   nil )
  (!pair  "ovl_op_info_t"
   (!type already_seen 1867)
-  (!srcfileloc  "cp/cp-tree.h" 5870)
+  (!srcfileloc  "cp/cp-tree.h" 5889)
   nil )
  (!pair  "base_access"
   (!type already_seen 2)
-  (!srcfileloc  "cp/cp-tree.h" 5340)
+  (!srcfileloc  "cp/cp-tree.h" 5355)
   nil )
  (!pair  "tsubst_flags_t"
   (!type already_seen 2)
-  (!srcfileloc  "cp/cp-tree.h" 5326)
+  (!srcfileloc  "cp/cp-tree.h" 5341)
   nil )
  (!pair  "cp_lvalue_kind"
   (!type already_seen 2)
-  (!srcfileloc  "cp/cp-tree.h" 5206)
+  (!srcfileloc  "cp/cp-tree.h" 5221)
   nil )
  (!pair  "named_decl_hash"
   (!type already_seen 93)
@@ -30582,23 +30590,23 @@
   nil )
  (!pair  "ipa_sra_function_summaries"
   (!type already_seen 1192)
-  (!srcfileloc  "ipa-sra.c" 380)
+  (!srcfileloc  "ipa-sra.c" 378)
   nil )
  (!pair  "isra_param_desc"
   (!type already_seen 1185)
-  (!srcfileloc  "ipa-sra.c" 254)
+  (!srcfileloc  "ipa-sra.c" 252)
   nil )
  (!pair  "vec<isra_param_desc,va_gc>"
   (!type already_seen 1189)
-  (!srcfileloc  "ipa-sra.c" 254)
+  (!srcfileloc  "ipa-sra.c" 252)
   nil )
  (!pair  "isra_func_summary"
   (!type already_seen 1187)
-  (!srcfileloc  "ipa-sra.c" 238)
+  (!srcfileloc  "ipa-sra.c" 236)
   nil )
  (!pair  "vec<param_access*,va_gc>"
   (!type already_seen 1183)
-  (!srcfileloc  "ipa-sra.c" 165)
+  (!srcfileloc  "ipa-sra.c" 163)
   nil )
  (!pair  "ipa_adjusted_param"
   (!type already_seen 837)
@@ -31528,59 +31536,59 @@
   nil )
  (!pair  "uchar"
   (!type already_seen 8)
-  (!srcfileloc  "coretypes.h" 427)
+  (!srcfileloc  "coretypes.h" 429)
   nil )
  (!pair  "gt_pointer_operator"
   (!type already_seen 2)
-  (!srcfileloc  "coretypes.h" 424)
+  (!srcfileloc  "coretypes.h" 426)
   nil )
  (!pair  "complex_mode"
   (!type already_seen 734)
-  (!srcfileloc  "coretypes.h" 379)
+  (!srcfileloc  "coretypes.h" 381)
   nil )
  (!pair  "string_int_pair"
   (!type already_seen 854)
-  (!srcfileloc  "coretypes.h" 352)
+  (!srcfileloc  "coretypes.h" 354)
   nil )
  (!pair  "int"
   (!type already_seen 378)
-  (!srcfileloc  "coretypes.h" 352)
+  (!srcfileloc  "coretypes.h" 354)
   nil )
  (!pair  "std::pair<char*,int>"
   (!type already_seen 854)
-  (!srcfileloc  "coretypes.h" 352)
+  (!srcfileloc  "coretypes.h" 354)
   nil )
  (!pair  "tree_pair"
   (!type already_seen 853)
-  (!srcfileloc  "coretypes.h" 351)
+  (!srcfileloc  "coretypes.h" 353)
   nil )
  (!pair  "std::pair<tree,tree>"
   (!type already_seen 853)
-  (!srcfileloc  "coretypes.h" 351)
+  (!srcfileloc  "coretypes.h" 353)
   nil )
  (!pair  "reg_class_t"
   (!type already_seen 2)
-  (!srcfileloc  "coretypes.h" 343)
+  (!srcfileloc  "coretypes.h" 345)
   nil )
  (!pair  "const_basic_block"
   (!type already_seen 267)
-  (!srcfileloc  "coretypes.h" 323)
+  (!srcfileloc  "coretypes.h" 325)
   nil )
  (!pair  "basic_block"
   (!type already_seen 267)
-  (!srcfileloc  "coretypes.h" 322)
+  (!srcfileloc  "coretypes.h" 324)
   nil )
  (!pair  "const_edge"
   (!type already_seen 271)
-  (!srcfileloc  "coretypes.h" 320)
+  (!srcfileloc  "coretypes.h" 322)
   nil )
  (!pair  "edge"
   (!type already_seen 271)
-  (!srcfileloc  "coretypes.h" 319)
+  (!srcfileloc  "coretypes.h" 321)
   nil )
  (!pair  "alias_set_type"
   (!type already_seen 2)
-  (!srcfileloc  "coretypes.h" 316)
+  (!srcfileloc  "coretypes.h" 318)
   nil )
  (!pair  "addr_space_t"
   (!type already_seen 8)
@@ -31919,7 +31927,7 @@
   (!srcfileloc  "gengtype.c" 5192)
   nil )
 )
-(!variables 722
+(!variables 723
  (!pair  "objc_eh_personality_decl"
   (!type already_seen 23)
   (!srcfileloc  "objc/objc-next-runtime-abi-02.c" 3844)
@@ -33276,93 +33284,97 @@
    (!option deletable string  "")
   )
  )
+ (!pair  "to_ramp"
+  (!type already_seen 398)
+  (!srcfileloc  "cp/coroutines.cc" 531)
+  nil )
  (!pair  "void_coro_handle_type"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 248)
+  (!srcfileloc  "cp/coroutines.cc" 250)
   nil )
  (!pair  "coro_handle_templ"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 247)
+  (!srcfileloc  "cp/coroutines.cc" 249)
   nil )
  (!pair  "coro_traits_templ"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 246)
+  (!srcfileloc  "cp/coroutines.cc" 248)
   nil )
  (!pair  "coro_await_resume_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 214)
+  (!srcfileloc  "cp/coroutines.cc" 216)
   nil )
  (!pair  "coro_await_suspend_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 213)
+  (!srcfileloc  "cp/coroutines.cc" 215)
   nil )
  (!pair  "coro_await_ready_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 212)
+  (!srcfileloc  "cp/coroutines.cc" 214)
   nil )
  (!pair  "coro_unhandled_exception_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 208)
+  (!srcfileloc  "cp/coroutines.cc" 210)
   nil )
  (!pair  "coro_gro_on_allocation_fail_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 207)
+  (!srcfileloc  "cp/coroutines.cc" 209)
   nil )
  (!pair  "coro_get_return_object_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 206)
+  (!srcfileloc  "cp/coroutines.cc" 208)
   nil )
  (!pair  "coro_from_address_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 205)
+  (!srcfileloc  "cp/coroutines.cc" 207)
   nil )
  (!pair  "coro_address_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 204)
+  (!srcfileloc  "cp/coroutines.cc" 206)
   nil )
  (!pair  "coro_resume_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 203)
+  (!srcfileloc  "cp/coroutines.cc" 205)
   nil )
  (!pair  "coro_yield_value_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 202)
+  (!srcfileloc  "cp/coroutines.cc" 204)
   nil )
  (!pair  "coro_return_value_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 201)
+  (!srcfileloc  "cp/coroutines.cc" 203)
   nil )
  (!pair  "coro_return_void_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 200)
+  (!srcfileloc  "cp/coroutines.cc" 202)
   nil )
  (!pair  "coro_final_suspend_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 199)
+  (!srcfileloc  "cp/coroutines.cc" 201)
   nil )
  (!pair  "coro_initial_suspend_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 198)
+  (!srcfileloc  "cp/coroutines.cc" 200)
   nil )
  (!pair  "coro_await_transform_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 197)
+  (!srcfileloc  "cp/coroutines.cc" 199)
   nil )
  (!pair  "coro_promise_type_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 193)
+  (!srcfileloc  "cp/coroutines.cc" 195)
   nil )
  (!pair  "coro_handle_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 192)
+  (!srcfileloc  "cp/coroutines.cc" 194)
   nil )
  (!pair  "coro_traits_identifier"
   (!type already_seen 23)
-  (!srcfileloc  "cp/coroutines.cc" 191)
+  (!srcfileloc  "cp/coroutines.cc" 193)
   nil )
  (!pair  "coroutine_info_table"
   (!type already_seen 1940)
-  (!srcfileloc  "cp/coroutines.cc" 112)
+  (!srcfileloc  "cp/coroutines.cc" 114)
   nil )
  (!pair  "decl_satisfied_cache"
   (!type already_seen 398)
@@ -33436,19 +33448,19 @@
   nil )
  (!pair  "unemitted_tinfo_decls"
   (!type already_seen 84)
-  (!srcfileloc  "cp/cp-tree.h" 7049)
+  (!srcfileloc  "cp/cp-tree.h" 7068)
   nil )
  (!pair  "ovl_op_alternate"
   (!type array 2173 nil  gc_used "OVL_OP_MAX" 
    (!type already_seen 8)
   )
-  (!srcfileloc  "cp/cp-tree.h" 5874)
+  (!srcfileloc  "cp/cp-tree.h" 5893)
   nil )
  (!pair  "ovl_op_mapping"
   (!type array 2174 nil  gc_used "MAX_TREE_CODES" 
    (!type already_seen 8)
   )
-  (!srcfileloc  "cp/cp-tree.h" 5872)
+  (!srcfileloc  "cp/cp-tree.h" 5891)
   nil )
  (!pair  "ovl_op_info"
   (!type array 2175 nil  gc_used "2" 
@@ -33456,27 +33468,27 @@
     (!type already_seen 1867)
    )
   )
-  (!srcfileloc  "cp/cp-tree.h" 5870)
+  (!srcfileloc  "cp/cp-tree.h" 5889)
   nil )
  (!pair  "tls_aggregates"
   (!type already_seen 23)
-  (!srcfileloc  "cp/cp-tree.h" 5542)
+  (!srcfileloc  "cp/cp-tree.h" 5561)
   nil )
  (!pair  "static_aggregates"
   (!type already_seen 23)
-  (!srcfileloc  "cp/cp-tree.h" 5540)
+  (!srcfileloc  "cp/cp-tree.h" 5559)
   nil )
  (!pair  "keyed_classes"
   (!type already_seen 84)
-  (!srcfileloc  "cp/cp-tree.h" 5449)
+  (!srcfileloc  "cp/cp-tree.h" 5464)
   nil )
  (!pair  "static_decls"
   (!type already_seen 84)
-  (!srcfileloc  "cp/cp-tree.h" 5445)
+  (!srcfileloc  "cp/cp-tree.h" 5460)
   nil )
  (!pair  "integer_two_node"
   (!type already_seen 23)
-  (!srcfileloc  "cp/cp-tree.h" 5368)
+  (!srcfileloc  "cp/cp-tree.h" 5383)
   nil )
  (!pair  "scope_chain"
   (!type already_seen 1853)
@@ -34413,7 +34425,7 @@
   nil )
  (!pair  "stack_check_libfunc"
   (!type already_seen 100)
-  (!srcfileloc  "explow.c" 1610)
+  (!srcfileloc  "explow.c" 1611)
   nil )
  (!pair  "hard_reg_clobbers"
   (!type array 2202 nil  gc_used "NUM_MACHINE_MODES" 
@@ -34852,7 +34864,7 @@
  )
  (!pair  "func_sums"
   (!type already_seen 1193)
-  (!srcfileloc  "ipa-sra.c" 431)
+  (!srcfileloc  "ipa-sra.c" 430)
   nil )
  (!pair  "ipa_vr_hash_table"
   (!type already_seen 1102)
