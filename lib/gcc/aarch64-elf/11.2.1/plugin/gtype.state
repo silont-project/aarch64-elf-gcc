@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "11.2.1 20220127")
+(!version  "11.2.1 20220130")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 223
@@ -28230,15 +28230,15 @@
  )
  
  (!type struct 2064 nil  gc_used "pending_noexcept"
-  (!srcfileloc  "cp/except.c" 1092)
+  (!srcfileloc  "cp/except.c" 1110)
   (!fields 2 
    (!pair  "fn"
     (!type already_seen 23)
-    (!srcfileloc  "cp/except.c" 1089)
+    (!srcfileloc  "cp/except.c" 1107)
     nil )
    (!pair  "loc"
     (!type already_seen 2)
-    (!srcfileloc  "cp/except.c" 1090)
+    (!srcfileloc  "cp/except.c" 1108)
     nil )
   )
   nil 1032 nil nil )
@@ -28248,15 +28248,15 @@
    (!type already_seen 2065)
   )
   gc_pointed_to "vec<pending_noexcept,va_gc>"
-  (!srcfileloc  "cp/except.c" 1092)
+  (!srcfileloc  "cp/except.c" 1110)
   (!fields 2 
    (!pair  "va_gc"
     (!type already_seen 79)
-    (!srcfileloc  "cp/except.c" 1092)
+    (!srcfileloc  "cp/except.c" 1110)
     nil )
    (!pair  "pending_noexcept"
     (!type already_seen 2064)
-    (!srcfileloc  "cp/except.c" 1092)
+    (!srcfileloc  "cp/except.c" 1110)
     nil )
   )
  )
@@ -30316,11 +30316,11 @@
   nil )
  (!pair  "pending_noexcept"
   (!type already_seen 2064)
-  (!srcfileloc  "cp/except.c" 1092)
+  (!srcfileloc  "cp/except.c" 1110)
   nil )
  (!pair  "vec<pending_noexcept,va_gc>"
   (!type already_seen 2065)
-  (!srcfileloc  "cp/except.c" 1092)
+  (!srcfileloc  "cp/except.c" 1110)
   nil )
  (!pair  "mangled_decl_hash"
   (!type already_seen 2061)
@@ -34643,7 +34643,7 @@
   nil )
  (!pair  "nsdmi_inst"
   (!type already_seen 925)
-  (!srcfileloc  "cp/init.c" 552)
+  (!srcfileloc  "cp/init.c" 562)
   (!options 
    (!option cache string  "")
   )
@@ -34658,7 +34658,7 @@
   nil )
  (!pair  "pending_noexcept_checks"
   (!type already_seen 2066)
-  (!srcfileloc  "cp/except.c" 1092)
+  (!srcfileloc  "cp/except.c" 1110)
   nil )
  (!pair  "ssdf_decls"
   (!type already_seen 84)
