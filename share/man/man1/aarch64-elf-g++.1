@@ -133,7 +133,7 @@
 .\" ========================================================================
 .\"
 .IX Title "GCC 1"
-.TH GCC 1 "2022-02-13" "gcc-11.2.1" "GNU"
+.TH GCC 1 "2022-02-17" "gcc-11.2.1" "GNU"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -1417,7 +1417,8 @@ See \s-1RS/6000\s0 and PowerPC Options.
 \&\fB\-mstack\-protector\-guard\-symbol=\fR\fIsymbol\fR 
 \&\fB\-mgeneral\-regs\-only  \-mcall\-ms2sysv\-xlogues 
 \&\-mindirect\-branch=\fR\fIchoice\fR  \fB\-mfunction\-return=\fR\fIchoice\fR 
-\&\fB\-mindirect\-branch\-register \-mneeded\fR
+\&\fB\-mindirect\-branch\-register \-mharden\-sls=\fR\fIchoice\fR 
+\&\fB\-mindirect\-branch\-cs\-prefix \-mneeded\fR
 .Sp
 \&\fIx86 Windows Options\fR
 \&\fB\-mconsole  \-mcygwin  \-mno\-cygwin  \-mdll 
@@ -30557,6 +30558,19 @@ not be reachable in the large code model.
 .IP "\fB\-mindirect\-branch\-register\fR" 4
 .IX Item "-mindirect-branch-register"
 Force indirect call and jump via register.
+.IP "\fB\-mharden\-sls=\fR\fIchoice\fR" 4
+.IX Item "-mharden-sls=choice"
+Generate code to mitigate against straight line speculation (\s-1SLS\s0) with
+\&\fIchoice\fR.  The default is \fBnone\fR which disables all \s-1SLS\s0
+hardening.  \fBreturn\fR enables \s-1SLS\s0 hardening for function returns.
+\&\fBindirect-jmp\fR enables \s-1SLS\s0 hardening for indirect jumps.
+\&\fBall\fR enables all \s-1SLS\s0 hardening.
+.IP "\fB\-mindirect\-branch\-cs\-prefix\fR" 4
+.IX Item "-mindirect-branch-cs-prefix"
+Add \s-1CS\s0 prefix to call and jmp to indirect thunk with branch target in
+r8\-r15 registers so that the call and jmp instruction length is 6 bytes
+to allow them to be replaced with \fBlfence; call *%r8\-r15\fR or
+\&\fBlfence; jmp *%r8\-r15\fR at run-time.
 .PP
 These \fB\-m\fR switches are supported in addition to the above
 on x86\-64 processors in 64\-bit environments.
