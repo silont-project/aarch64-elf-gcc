@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "11.2.1 20220227")
+(!version  "11.2.1 20220303")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 223
@@ -34662,19 +34662,19 @@
   nil )
  (!pair  "ssdf_decls"
   (!type already_seen 84)
-  (!srcfileloc  "cp/decl2.c" 3792)
+  (!srcfileloc  "cp/decl2.c" 3795)
   nil )
  (!pair  "ssdf_decl"
   (!type already_seen 23)
-  (!srcfileloc  "cp/decl2.c" 3788)
+  (!srcfileloc  "cp/decl2.c" 3791)
   nil )
  (!pair  "priority_decl"
   (!type already_seen 23)
-  (!srcfileloc  "cp/decl2.c" 3785)
+  (!srcfileloc  "cp/decl2.c" 3788)
   nil )
  (!pair  "initialize_p_decl"
   (!type already_seen 23)
-  (!srcfileloc  "cp/decl2.c" 3782)
+  (!srcfileloc  "cp/decl2.c" 3785)
   nil )
  (!pair  "mangled_decls"
   (!type already_seen 2063)
